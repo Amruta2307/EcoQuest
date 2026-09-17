@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoQuest | Gamified Environmental Education</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>
+            <h2>EcoQuest</h2>
+            <span>Learn • Act • Impact</span>
+        </div>
+    </div>
+
+    <nav>
+
+        <a href="#" class="nav-item active">
+            <span>⌂</span>
+            Dashboard
+        </a>
+
+        <a href="#learn" class="nav-item">
+            <span>📚</span>
+            Learn
+        </a>
+
+        <a href="#challenges" class="nav-item">
+            <span>🎯</span>
+            Challenges
+        </a>
+
+        <a href="#quiz" class="nav-item">
+            <span>🧠</span>
+            Eco Quiz
+        </a>
+
+        <a href="#leaderboard" class="nav-item">
+            <span>🏆</span>
+            Leaderboard
+        </a>
+
+        <a href="#badges" class="nav-item">
+            <span>🏅</span>
+            My Badges
+        </a>
+
+        <a href="#impact" class="nav-item">
+            <span>🌍</span>
+            My Impact
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="help-box">
+            <div class="help-icon">💡</div>
+
+            <h4>Eco Tip</h4>
+
+            <p>
+                Carry a reusable bottle and help reduce plastic waste.
+            </p>
+        </div>
+
+        <a href="#" class="nav-item">
+            <span>⚙</span>
+            Settings
+        </a>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+        <div class="mobile-logo">
+            🌱 EcoQuest
+        </div>
+
+        <div class="search">
+            🔍
+            <input type="text" placeholder="Search lessons, challenges...">
+        </div>
+
+        <div class="top-actions">
+
+            <button class="icon-btn">🔔</button>
+
+            <div class="profile">
+
+                <div class="avatar">
+                    AP
+                </div>
+
+                <div class="profile-info">
+                    <strong>Amruta Patil</strong>
+                    <span>Eco Explorer</span>
+                </div>
+
+                <span>⌄</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="welcome">GOOD AFTERNOON 👋</span>
+
+            <h1>
+                Learn Today.<br>
+                <span>Protect Tomorrow.</span>
+            </h1>
+
+            <p>
+                Turn environmental learning into real-world action.
+                Complete missions, earn XP and become an Eco Champion.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" onclick="scrollToSection('learn')">
+                    Start Learning →
+                </button>
+
+                <button class="secondary-btn" onclick="scrollToSection('challenges')">
+                    Explore Challenges
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="planet">
+                🌍
+            </div>
+
+            <div class="floating-card card-one">
+                🌱
+                <div>
+                    <strong>+250 XP</strong>
+                    <small>Eco Challenge</small>
+                </div>
+            </div>
+
+            <div class="floating-card card-two">
+                🏆
+                <div>
+                    <strong>Level 08</strong>
+                    <small>Green Warrior</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <div class="stat-icon green">⚡</div>
+
+            <div>
+                <span>Total XP</span>
+                <h2>2,840</h2>
+                <small>↑ 18% this week</small>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon blue">🎯</div>
+
+            <div>
+                <span>Challenges</span>
+                <h2>24</h2>
+                <small>8 completed this month</small>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon yellow">🏅</div>
+
+            <div>
+                <span>Badges Earned</span>
+                <h2>12</h2>
+                <small>3 new this month</small>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon purple">🌍</div>
+
+            <div>
+                <span>Eco Score</span>
+                <h2>86<span>/100</span></h2>
+                <small>Excellent progress!</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTENT GRID ================= -->
+
+    <section class="content-grid">
+
+
+        <!-- LEARNING -->
+
+        <div class="section-card learning" id="learn">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">CONTINUE LEARNING</span>
+                    <h2>Pick up where you left off</h2>
+                </div>
+
+                <button class="text-btn">
+                    View All →
+                </button>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image climate">
+                    🌍
+                </div>
+
+                <div class="course-info">
+
+                    <span class="course-tag">
+                        CLIMATE ACTION
+                    </span>
+
+                    <h3>
+                        Understanding Climate Change
+                    </h3>
+
+                    <p>
+                        Learn how climate change affects our planet
+                        and what actions can make a difference.
+                    </p>
+
+                    <div class="progress-container">
+
+                        <div class="progress-text">
+                            <span>Progress</span>
+                            <strong>72%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div style="width:72%"></div>
+                        </div>
+
+                    </div>
+
+                    <button class="continue-btn">
+                        Continue Learning →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DAILY MISSION -->
+
+        <div class="section-card mission">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">DAILY MISSION</span>
+                    <h2>Today's Eco Challenge</h2>
+                </div>
+
+                <span class="fire">🔥 7 day streak</span>
+
+            </div>
+
+
+            <div class="mission-box">
+
+                <div class="mission-icon">
+                    💧
+                </div>
+
+                <h3>Water Saver</h3>
+
+                <p>
+                    Take one action today to reduce water wastage
+                    and upload your achievement.
+                </p>
+
+                <div class="reward">
+
+                    <span>🎁 Reward</span>
+
+                    <strong>
+                        +150 XP
+                    </strong>
+
+                </div>
+
+                <button class="primary-btn full">
+                    Accept Challenge
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHALLENGES ================= -->
+
+    <section class="section-block" id="challenges">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">EXPLORE</span>
+                <h2>Popular Eco Challenges</h2>
+            </div>
+
+            <button class="text-btn">
+                See all challenges →
+            </button>
+
+        </div>
+
+
+        <div class="challenge-grid">
+
+            <div class="challenge-card">
+
+                <div class="challenge-top">
+                    <div class="challenge-icon">♻️</div>
+                    <span>+200 XP</span>
+                </div>
+
+                <h3>Plastic-Free Day</h3>
+
+                <p>
+                    Avoid single-use plastic for an entire day.
+                </p>
+
+                <div class="challenge-bottom">
+                    <span>👥 1.2K students</span>
+                    <button onclick="joinChallenge(this)">
+                        Join
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="challenge-card">
+
+                <div class="challenge-top">
+                    <div class="challenge-icon">🌳</div>
+                    <span>+300 XP</span>
+                </div>
+
+                <h3>Plant a Tree</h3>
+
+                <p>
+                    Plant and care for a tree in your community.
+                </p>
+
+                <div class="challenge-bottom">
+                    <span>👥 890 students</span>
+                    <button onclick="joinChallenge(this)">
+                        Join
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="challenge-card">
+
+                <div class="challenge-top">
+                    <div class="challenge-icon">🚲</div>
+                    <span>+150 XP</span>
+                </div>
+
+                <h3>Green Commute</h3>
+
+                <p>
+                    Walk, cycle or use public transport today.
+                </p>
+
+                <div class="challenge-bottom">
+                    <span>👥 760 students</span>
+                    <button onclick="joinChallenge(this)">
+                        Join
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="challenge-card">
+
+                <div class="challenge-top">
+                    <div class="challenge-icon">💡</div>
+                    <span>+100 XP</span>
+                </div>
+
+                <h3>Save Energy</h3>
+
+                <p>
+                    Reduce unnecessary electricity consumption.
+                </p>
+
+                <div class="challenge-bottom">
+                    <span>👥 1.5K students</span>
+                    <button onclick="joinChallenge(this)">
+                        Join
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUIZ ================= -->
+
+    <section class="quiz-section" id="quiz">
+
+        <div class="quiz-content">
+
+            <span class="section-label">
+                TEST YOUR KNOWLEDGE
+            </span>
+
+            <h2>
+                Ready for today's<br>
+                <span>Eco Quiz?</span>
+            </h2>
+
+            <p>
+                Challenge yourself with 10 questions
+                and earn up to 500 XP.
+            </p>
+
+            <button class="primary-btn" onclick="startQuiz()">
+                Start Quiz 🚀
+            </button>
+
+        </div>
+
+        <div class="quiz-graphic">
+            🧠
+        </div>
+
+    </section>
+
+
+    <!-- ================= LEADERBOARD ================= -->
+
+    <section class="section-block" id="leaderboard">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">
+                    THIS WEEK
+                </span>
+
+                <h2>Eco Champions</h2>
+            </div>
+
+            <button class="text-btn">
+                Full Leaderboard →
+            </button>
+
+        </div>
+
+
+        <div class="leaderboard-card">
+
+            <div class="leader-row">
+
+                <div class="rank first">
+                    01
+                </div>
+
+                <div class="leader-avatar">
+                    RK
+                </div>
+
+                <div class="leader-name">
+                    <strong>Rahul Kulkarni</strong>
+                    <span>🌿 Green Warrior</span>
+                </div>
+
+                <div class="leader-xp">
+                    4,820 XP
+                </div>
+
+            </div>
+
+
+            <div class="leader-row">
+
+                <div class="rank second">
+                    02
+                </div>
+
+                <div class="leader-avatar">
+                    PS
+                </div>
+
+                <div class="leader-name">
+                    <strong>Priya Sharma</strong>
+                    <span>🌱 Eco Explorer</span>
+                </div>
+
+                <div class="leader-xp">
+                    4,560 XP
+                </div>
+
+            </div>
+
+
+            <div class="leader-row current">
+
+                <div class="rank third">
+                    08
+                </div>
+
+                <div class="leader-avatar">
+                    AP
+                </div>
+
+                <div class="leader-name">
+                    <strong>You — Amruta Patil</strong>
+                    <span>🌍 Planet Protector</span>
+                </div>
+
+                <div class="leader-xp">
+                    2,840 XP
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BADGES ================= -->
+
+    <section class="section-block" id="badges">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">ACHIEVEMENTS</span>
+                <h2>Your Eco Badges</h2>
+            </div>
+
+        </div>
+
+
+        <div class="badge-grid">
+
+            <div class="badge">
+                <div>🌱</div>
+                <strong>Eco Beginner</strong>
+                <span>First lesson completed</span>
+            </div>
+
+            <div class="badge">
+                <div>♻️</div>
+                <strong>Waste Buster</strong>
+                <span>10 waste challenges</span>
+            </div>
+
+            <div class="badge">
+                <div>💧</div>
+                <strong>Water Saver</strong>
+                <span>5 water missions</span>
+            </div>
+
+            <div class="badge locked">
+                <div>🔒</div>
+                <strong>Climate Hero</strong>
+                <span>Complete 20 challenges</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= IMPACT ================= -->
+
+    <section class="impact-section" id="impact">
+
+        <div>
+
+            <span class="section-label">
+                YOUR CONTRIBUTION
+            </span>
+
+            <h2>
+                Every small action<br>
+                creates a <span>big impact.</span>
+            </h2>
+
+            <p>
+                Your activities have already contributed
+                to positive environmental change.
+            </p>
+
+        </div>
+
+
+        <div class="impact-stats">
+
+            <div>
+                <strong>18</strong>
+                <span>Trees Supported 🌳</span>
+            </div>
+
+            <div>
+                <strong>42 kg</strong>
+                <span>Waste Reduced ♻️</span>
+            </div>
+
+            <div>
+                <strong>1,240 L</strong>
+                <span>Water Saved 💧</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+            <strong>🌱 EcoQuest</strong>
+            <span>Building environmentally responsible communities.</span>
+        </div>
+
+        <p>
+            © 2026 EcoQuest. Learn • Act • Impact.
+        </p>
+
+    </footer>
+
+</main>
+
+
+<!-- ================= QUIZ MODAL ================= -->
+
+<div class="modal" id="quizModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeQuiz()">×</button>
+
+        <span class="section-label">
+            ECO QUIZ
+        </span>
+
+        <h2>Which gas is primarily responsible for global warming?</h2>
+
+        <button class="quiz-option" onclick="answer(false)">
+            Oxygen
+        </button>
+
+        <button class="quiz-option" onclick="answer(true)">
+            Carbon Dioxide
+        </button>
+
+        <button class="quiz-option" onclick="answer(false)">
+            Nitrogen
+        </button>
+
+        <button class="quiz-option" onclick="answer(false)">
+            Hydrogen
+        </button>
+
+        <div id="quizResult"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
